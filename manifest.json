@@ -3,13 +3,12 @@
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [
-        "activeTab",
-        "scripting",
         "tabs",
         "contextMenus",
         "notifications",
         "storage"
     ],
+    "homepage_url": "https://github.com/dbswnschl/sjva3_youtube_dl_extension",
     "host_permissions": [
         "https://www.youtube.com/*"
     ],
