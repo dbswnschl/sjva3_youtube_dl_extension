@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="popup.js"></script>
+    <style>
+        body {
+            height: auto;
+            width: 400px;
+            padding: 1.5rem;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 0.88rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            text-align: left;
+            background-color: #e2e2e2
+        }
+        .input-group {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="input_on_off" />
+        <label id="label_on_off" class="custom-control-label" for="input_on_off"
+            style="font-size: large; font-weight: bold;">Sjva3 youtube_dl ON / OFF</label>
+    </div>
+    <hr />
+    <div class="div_extension_settings">
+        <h5 id="h5_extension_title">환경 설정</h5>
+        <div class="input-group">
+            <input id="input_extension_target_url" type="text" placeholder="Sjva3주소:포트 입력 (예 : https://abcd.efg.com:19999 )" aria-label="sjav3_url"
+                aria-describedby="basic-addon" required="required" style="width:100%;" />
+        </div>
+        <div class="input-group mb-3">
+            <input id="input_extension_filename" type="text" placeholder="파일명 규칙 (공백 : 기본)" aria-label="sjav3_filename"
+                aria-describedby="basic-addon" style="width:100%;" />
+        </div>
+
+        <div class="input-group mb-3">
+            <select id="select_extension_quality" class="custom-select">
+                <option id="option_extension_best" value="best" selected>화질 : best(기본)</option>
+                <option id="option_extension_worst" value="worst">화질 : worst</option>
+                <option id="option_extension_bestvideo" value="bestvideo">화질 : bestvideo</option>
+                <option id="option_extension_worstvideo" value="worstvideo">화질 : worstvideo</option>
+                <option id="option_extension_bestaudio" value="bestaudio">화질 : bestaudio</option>
+                <option id="option_extension_worstaudio" value="worstaudio">화질 : worstaudio</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <button id='btn_extension_save' type="button" class="btn btn-light">설정 저장</button>
+        </div>
+    </div>
+</body>
+
+</html>

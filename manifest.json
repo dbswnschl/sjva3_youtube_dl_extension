@@ -1,0 +1,29 @@
+{
+    "name": "sjva3_youtube_dl_extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "contextMenus",
+        "notifications",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.ico"
+    },
+    "icons": {
+        "16": "image/icon_16.png",
+        "32": "image/icon_32.png",
+        "64": "image/icon_64.png",
+        "128": "image/icon_128.png"
+    }
+}
