@@ -18,7 +18,7 @@
     },
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "icon.ico"
+        "default_icon": "image/icon_16.png"
     },
     "icons": {
         "16": "image/icon_16.png",
